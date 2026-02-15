@@ -1,0 +1,40 @@
+UID        PID   PPID   LWP  C NLWP STIME TTY      TIME     CMD
+root         1     0     1   1   1   14:48 ?        00:00:00 /sbin/init
+root         2     1     2   0   2   14:48 ?        00:00:00 /init
+root         2     1     9   0   2   14:48 ?        00:00:00 /init
+root         7     2     7   0   2   14:48 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --
+root         7     2     8   0   2   14:48 ?        00:00:00 plan9 --control-socket 7 --log-level 4 --server-fd 8 --
+root        43     1    43   0   1   14:48 ?        00:00:00 /usr/lib/systemd/systemd-journald
+root        90     1    90   0   1   14:48 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+systemd+   104     1   104   0   1   14:48 ?        00:00:00 /usr/lib/systemd/systemd-resolved
+systemd+   105     1   105   0   2   14:48 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+systemd+   105     1   139   0   2   14:48 ?        00:00:00 /usr/lib/systemd/systemd-timesyncd
+root       151     1   151   0   1   14:48 ?        00:00:00 /usr/sbin/cron -f -P
+message+   152     1   152   0   1   14:48 ?        00:00:00 dbus-daemon --system --address=systemd: --nofork --nop
+root       159     1   159   0   1   14:48 ?        00:00:00 /usr/lib/systemd/systemd-logind
+root       161     1   161   0   8   14:48 ?        00:00:00 /usr/libexec/wsl-pro-service
+root       161     1   188   0   8   14:48 ?        00:00:00 /usr/libexec/wsl-pro-service
+root       161     1   189   0   8   14:48 ?        00:00:00 /usr/libexec/wsl-pro-service
+root       161     1   190   0   8   14:48 ?        00:00:00 /usr/libexec/wsl-pro-service
+root       161     1   191   0   8   14:48 ?        00:00:00 /usr/libexec/wsl-pro-service
+root       161     1   192   0   8   14:48 ?        00:00:00 /usr/libexec/wsl-pro-service
+root       161     1   196   0   8   14:48 ?        00:00:00 /usr/libexec/wsl-pro-service
+root       161     1   203   0   8   14:48 ?        00:00:00 /usr/libexec/wsl-pro-service
+root       167     1   167   0   1   14:48 hvc0     00:00:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200
+syslog     175     1   175   0   4   14:48 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+syslog     175     1   185   0   4   14:48 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+syslog     175     1   186   0   4   14:48 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+syslog     175     1   187   0   4   14:48 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root       183     1   183   0   2   14:48 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear - linux
+root       184     1   184   0   2   14:48 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended
+root       184     1   213   0   2   14:48 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended
+root       268     2   268   0   1   14:48 ?        00:00:00 /init
+root       269   268   269   0   1   14:48 ?        00:00:00 /init
+aryak_0+   270   269   270   0   1   14:48 pts/0    00:00:00 -bash
+root       271     2   271   0   1   14:48 pts/1    00:00:00 /bin/login -f
+aryak_0+   314     1   314   0   1   14:48 ?        00:00:00 /usr/lib/systemd/systemd --user
+aryak_0+   315   314   315   0   1   14:48 ?        00:00:00 (sd-pam)
+aryak_0+   339   271   339   0   1   14:48 pts/1    00:00:00 -bash
+root       387    90   387   0   1   14:48 ?        00:00:00 (udev-worker)
+root       388    90   388   0   1   14:48 ?        00:00:00 (udev-worker)
+aryak_0+   389   270   389   0   1   14:48 pts/0    00:00:00 ps -eLf
