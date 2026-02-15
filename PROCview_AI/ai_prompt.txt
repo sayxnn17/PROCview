@@ -1,0 +1,3 @@
+Prompt Used :
+
+Write a C program to create a user-defined command called my_ps which combines the outputs of ps aux and ps -eLf. The program should execute both commands using system(), store the outputs in text files, read the process details using file handling functions, and merge the data based on PID. Finally, display the merged output in a tabular format, limiting the number of rows for readability.
