@@ -1,10 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "my_ps.h"
 
 #define MAX_PROCESSES 1000
 #define OUTPUT_LIMIT 15
+
+/* Structure for ps aux data */
+typedef struct {
+char user[50];
+int pid;
+float cpu;
+float mem;
+int vsz;
+int rss;
+char tty[20];
+char stat[10];
+char start[20];
+char time[20];
+char command[200];
+} ps_aux_struct;
+
+/* Structure for ps -eLf data */
+typedef struct {
+char uid[20];
+int pid;
+int ppid;
+int lwp;
+int c;
+int nlwp;
+} ps_elf_struct;
 
 /* Function to execute system commands */
 void generate_snapshots()
@@ -19,7 +43,7 @@ int load_aux_data(FILE *fp, ps_aux_struct data[])
 char buffer[1024];
 int count = 0;
 
-```
+
 fgets(buffer, sizeof(buffer), fp); // skip header
 
 while (count < MAX_PROCESSES &&
@@ -139,6 +163,4 @@ system("cat merged.txt");
 
 return 0;
 
-
 }
-
