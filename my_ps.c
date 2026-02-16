@@ -4,7 +4,7 @@
 #include "my_ps.h"
 
 #define MAX 1000
-#define LIMIT 15   
+#define LIMIT 15   // change to 0 if full output needed
 
 int main()
 {
